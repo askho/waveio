@@ -1,0 +1,11 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Bar="clr-namespace:Bar;assembly=UserControlLibrary" x:Class="Testing.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <Bar:Bar x:Name="bar" HorizontalAlignment="Left" Margin="129,0,0,56" VerticalAlignment="Bottom" Height="75" />
+
+    </Grid>
+</Window>

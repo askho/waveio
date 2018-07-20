@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ea1eec89-ba86-4960-a807-884348042e59"
+  name="Windows"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9ed92e28-088f-42f9-b23d-203290f6d258"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Windows"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b6415487-7659-4e38-ac6b-e9a8892af4b8"
+        LastKnownName="Input"
+        LastKnownLocation="Package3_2035.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d3dd193b-e21d-4d64-af34-cf68a569ab7f"
+        LastKnownName="Controls"
+        LastKnownLocation="Package4_2035.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ee2b4bda-70af-4c96-95c3-4ee7fcb85868"
+        LastKnownName="Shapes"
+        LastKnownLocation="Package5_2035.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4ed426c3-1b20-41ed-9edc-7761f70b9e3c"
+        LastKnownName="Markup"
+        LastKnownLocation="Package6_2035.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

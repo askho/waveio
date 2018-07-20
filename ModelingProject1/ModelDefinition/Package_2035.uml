@@ -1,0 +1,1592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="eeabc087-149d-4964-8d3b-7382ff7cc7ab"
+  name="PlayPause"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="13995b7c-3bd7-4248-97bd-48ffc5a4b25b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPlayPause"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="c51abef5-1c91-4292-82e1-0d474c0cfa96">
+      <profileInstance
+        Id="a4ce9eb8-dfc4-4757-b41c-5b9efb7cadc4"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="31402229-03f2-45f2-a939-a4b13c278b55"
+        name="PlayBackStatus"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="094337af-eca3-4ace-abd5-4b121af8aae5"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="59b956cb-894f-4435-9d3b-a5b1af8556a2"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4722f99-c8f6-4410-9362-a2ad9b6efe74">
+                <propertyInstance
+                  Id="6ebf0490-dd0a-4c65-a859-f3c9dbdf178a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a9a2b03-61fc-4902-9c23-dca3b3657fa7">
+                <propertyInstance
+                  Id="122695bf-7c58-4baa-8390-e4d1a0f6329d"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75f8474f-c116-44b0-af48-6470829218ec">
+                <propertyInstance
+                  Id="9f4a70fa-44a4-47f0-8d2d-288da26cbdf0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="fa83a312-a6aa-4c03-aab9-5395bafcfc4e"
+            name="Play">
+            <referencesInternal>
+              <reference
+                Id="af5bd2a2-d1fd-4961-bc3c-a3a8ed0641dd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl) Member%3DPlay"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="7e553f4a-331b-44e9-830c-c4b799d89d52"
+            name="Pause">
+            <referencesInternal>
+              <reference
+                Id="49f41052-7a78-43cc-ac30-51a5823a0df5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl) Member%3DPause"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2fea6b01-107d-4ace-a9b2-aecc41b0eb76"
+        name="PlayPauseControl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a6ca1f32-113d-4d05-b6b3-5b19c6eb6c99"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4b51193e-7fec-49e5-b18c-61cc8644a29c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="361c7bc9-81d5-4e53-a97c-1fd10c18d094">
+                <propertyInstance
+                  Id="fa1346e8-fea8-46c6-8f55-ac7b8d096baf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0bf11db8-f6e2-4df4-b5dc-85c524165c6d">
+                <propertyInstance
+                  Id="c9a53906-4017-415e-9919-12ed60198ee5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e21d8921-f5a8-408b-b83f-eb16bff7f9e7">
+                <propertyInstance
+                  Id="c9209a34-9dc0-46af-838f-0eaa41578222"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13e6a9d3-8838-4e86-847c-7a23f4bb54dd">
+                <propertyInstance
+                  Id="ab893bae-fc28-4237-b537-31a5e4094b3e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22dd5ff3-1a6e-4a77-a517-efa27c95cd1c">
+                <propertyInstance
+                  Id="eb9bdde9-4e02-4aab-aab3-8770618a8394"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a21d5742-5d08-4d93-b341-62628868250c">
+            <interfaceMoniker
+              Id="123c116b-847b-4311-abb4-897e3c51436c"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package6_2035.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="183aae0e-fd50-4c99-86ff-9b1e36862623"
+            isSubstitutable="false">
+            <classMoniker
+              Id="96ffb244-19ff-4e3e-8fa7-e3920d47a1d9"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package4_2035.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="d108c514-d77a-42ed-9113-e20894454e24"
+            isDerived="false"
+            sourceEndRoleName="PlayPauseControl"
+            targetEndRoleName="status"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="31402229-03f2-45f2-a939-a4b13c278b55"
+              LastKnownName="PlayBackStatus"
+              LastKnownLocation="Package_2035.uml" />
+            <description>Property status references type PlayBackStatus.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ace0211-d661-4493-9905-2d1443296b75"
+                  name="PlayPauseControl"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9e025f4b-8764-4f4c-aacd-53b36c2f04f5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="99ededa9-75a4-4608-b4aa-299d1f872d97"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0f86bb7-4439-49f6-84bc-dae7648b91c2"
+                  name="status"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ed660c7e-86ec-4385-895b-1586002fbe89"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d0f3636c-e854-4ce6-9a5c-379601f7b95e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0dc3ece4-5545-4e31-bc80-dfc86601a936"
+            name="status"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="686dc6a7-16b6-4612-89bd-73c407f40b0b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3Dstatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54054c7a-666b-4f49-96cd-640fa3106543"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75cae01b-4760-422c-a645-2663cd1f89e2">
+                    <propertyInstance
+                      Id="8ae5e57c-9727-41a0-9572-cef5ef031036"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4556f28e-e8b7-48d9-85c0-b38b8516b2ee">
+                    <propertyInstance
+                      Id="40802c9a-a0b7-4301-b1fd-0641e5d5eaef"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a435097b-23d0-4757-b5fd-c1151d1fb412">
+                    <propertyInstance
+                      Id="8e44b168-4734-4fea-a37d-5394d2ae0f1f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01cc6c0e-f61b-4e71-996e-4d20f1f5ef68">
+                    <propertyInstance
+                      Id="245d22f1-8191-4437-b941-dd942d70b917"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa5405cf-bf47-4b0d-ac76-08ee34063a4a">
+                    <propertyInstance
+                      Id="1b65285a-cf73-48ae-ae54-91e96c9fab74"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7593b0a0-cb41-44d4-bdec-6e3c8c6048b6">
+                    <propertyInstance
+                      Id="65609cca-c8cb-4486-8f3d-a337c724025f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f05a8a6-ea39-46b1-8401-529d57db07cf">
+                    <propertyInstance
+                      Id="209c041e-3ba1-4a81-8f94-606827259e42"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="31402229-03f2-45f2-a939-a4b13c278b55"
+                LastKnownName="PlayBackStatus"
+                LastKnownLocation="Package_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6b7fb2b6-5e80-4c00-b6de-506ef4fe4b82"
+            name="contentHolder"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="90c5fffc-0999-4853-b192-09d5e7a97b14"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DcontentHolder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d65cba5c-2383-417a-83e5-41b0da994a8c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b42b364-f070-4dfa-981a-e1d7e4e2013a">
+                    <propertyInstance
+                      Id="84cfcd50-182b-4329-afad-9b4157b16008"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b624197e-f7e3-4426-a7ee-0ffc16d06de2">
+                    <propertyInstance
+                      Id="a3a5ae8a-076c-40af-8255-e72091146183"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6a0b645-6335-41ab-9d4d-9f13f5974100">
+                    <propertyInstance
+                      Id="d1786a8a-7891-419f-8751-083011fa18e2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21fdad9b-c22b-431c-8d34-99cf53c8113d">
+                    <propertyInstance
+                      Id="2581970a-114b-4e56-aa69-8f9a350c6a94"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a02989e5-3f38-4f04-aebb-6be6cc8f1a5f">
+                    <propertyInstance
+                      Id="3b74615d-0a02-4e64-bfa3-8d415e0051e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="33c1c81a-ac59-45c1-9c67-6d3046273e74"
+                LastKnownName="Grid"
+                LastKnownLocation="Package4_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bc9a84f0-4659-417d-861b-aac886b48830"
+            name="overlay"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e932fe80-8448-4042-a713-0a6c21087ba1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3Doverlay"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="48af5028-eccb-49a5-a0d3-0d0fccd77832"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca37e171-49d6-4ba4-934f-82dacba747ff">
+                    <propertyInstance
+                      Id="df5bbb5e-7bdf-481b-9d92-94c7c2265106"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3111b1ca-7d40-4754-b032-382ac27e2c6e">
+                    <propertyInstance
+                      Id="57dae35a-ee04-4563-ab2c-2c3e51a67063"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e499eaf-d83a-4d81-abe9-e2a40d591196">
+                    <propertyInstance
+                      Id="e0cd80ea-fc8b-493d-86bb-297630aecc71"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2b7f851-b46d-44f4-8b2a-7c14a1951712">
+                    <propertyInstance
+                      Id="2885e18c-5503-4374-8c9e-995be056c477"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="501b828e-752a-419f-950f-6914e8db51b9">
+                    <propertyInstance
+                      Id="abd49af3-9291-4573-90e3-51431ebc39be"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7f3d54f7-281e-44b5-90a9-d09ed98d90ad"
+                LastKnownName="Rectangle"
+                LastKnownLocation="Package5_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6f416712-f360-483a-b288-50ad4e5b39e3"
+            name="pauseButton"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="52d0d70e-0080-41cc-b695-17f049bad85f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DpauseButton"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b38ff922-c17a-4135-a9e3-d4a0982d4290"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26bc2a63-dd44-44fa-b348-a26985938658">
+                    <propertyInstance
+                      Id="0710762d-df4f-46a8-87ba-8fd5ddbfc323"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc0a40c6-d1e7-4549-a4fb-cfc92069b3c1">
+                    <propertyInstance
+                      Id="2291d219-a064-41c4-9cda-f4c47f278a9a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f7389ff-aa1d-40d6-a1d2-299a92ea4da4">
+                    <propertyInstance
+                      Id="4e0e2577-5477-4dbe-808d-facb8e7084a1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b45b007f-ef51-4ce6-b810-66514f290881">
+                    <propertyInstance
+                      Id="fae5cf56-b6de-412e-b20d-ded0faf51103"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eee959c2-7b9d-4d9c-bc48-b606127315fe">
+                    <propertyInstance
+                      Id="e50bf8f2-e083-4c42-af60-1175e971b019"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ef8af83e-dad5-4dcc-a96e-5f017bbc8f05"
+                LastKnownName="Canvas"
+                LastKnownLocation="Package4_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="97fa7b72-56af-4b23-9209-8b6e658b4b21"
+            name="playButton"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="225a7053-2886-4742-a44e-581bc5395f8d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DplayButton"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a75ca23c-2983-47ca-9de0-21117e9d4a8f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08cb01c8-7aa8-43b9-b2c4-d5c8d518eb49">
+                    <propertyInstance
+                      Id="0de9d31a-2d58-4e59-a912-6d3815791cab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3615fc17-7242-46ef-b63a-0fe6ffe94cba">
+                    <propertyInstance
+                      Id="da5df6fe-2e2c-4db1-9075-8e5cb894da84"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e054dfdf-d5e3-47ed-bb05-a354ad2107cf">
+                    <propertyInstance
+                      Id="fb790427-8cc4-4122-861f-0d9bf29ef202"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="983692e3-051c-403d-a55b-1d1e8a6c9fe3">
+                    <propertyInstance
+                      Id="ce14f039-919f-4ef0-9911-9d1187b48eb0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d9653e0-0393-415b-978c-683de437241b">
+                    <propertyInstance
+                      Id="04df9759-d6b9-4823-9da7-ac50c250bead"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ef8af83e-dad5-4dcc-a96e-5f017bbc8f05"
+                LastKnownName="Canvas"
+                LastKnownLocation="Package4_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fc807aaf-4477-4df0-9299-673a6172fa70"
+            name="playIcon"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="48c50e55-8325-419f-a07f-9ff15a143baf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DplayIcon"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f9b69617-cdd1-43d9-be72-2ea94f2c4048"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6d8f868-fe71-4c38-935b-1b5d20088af6">
+                    <propertyInstance
+                      Id="b172687e-32f6-42b9-ab02-73c237e45edc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41d90c60-6076-4b64-9250-5eceb924c0e9">
+                    <propertyInstance
+                      Id="6cb19baf-afb1-4ef6-9891-c8c7d4660689"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b566d7bf-48f7-48a0-ad8b-7a4bf9b39610">
+                    <propertyInstance
+                      Id="7ca5cdca-90e6-4cc9-92e0-fd9f038c2535"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="712a942a-cdd8-419d-994f-c8adf50a7573">
+                    <propertyInstance
+                      Id="9f6043aa-8f6a-4fa5-ae9f-d46a8384a0a7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d53ce9f4-6835-4667-9bde-f8890e5da87c">
+                    <propertyInstance
+                      Id="07aa0926-0067-44c1-ab68-2ec7c2eac6dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f22f9805-87f3-40db-b72f-0269010c5ba8"
+                LastKnownName="Polygon"
+                LastKnownLocation="Package5_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5cd378d0-d863-4a2a-ac4a-69479f71e0bc"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="254d3083-6864-4123-9aec-33417dac0d34"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b40c52b2-d98d-4aa8-833c-c53f0537f329"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd17cf7a-f4ed-4215-a849-049d17f5b77d">
+                    <propertyInstance
+                      Id="9e9d3917-742b-4e59-b8d9-e871823877f9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b361f3c9-67a4-453c-b22f-02386e3309cd">
+                    <propertyInstance
+                      Id="32e5a38c-75a9-4f1a-b23e-0796f78d54be"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3043a375-b076-46a0-a2f7-0bad6285a294">
+                    <propertyInstance
+                      Id="f339675c-722e-4edc-be2b-78068c55b3cc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd49d2a8-2f0a-47a7-b956-e445e70a9a83">
+                    <propertyInstance
+                      Id="ec509b9d-07f1-4351-a818-ee54bc3454c6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba793a8a-d573-44da-a5e3-920d9d12b6a3">
+                    <propertyInstance
+                      Id="6d2608ed-f101-4bca-83ed-f5bbaf0b9aae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bfeb7b14-3582-4c3c-b3f9-c37fa9abbc72"
+            name="playBackStatus"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="15d1ab6d-f498-4299-b722-51f7d5c9f631"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DplayBackStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d8d6e9a4-2820-4aac-a813-6811261114ec"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="244e89b0-0258-4fc3-8d3a-5fc43354ffc6">
+                    <propertyInstance
+                      Id="a19ac3a7-9073-4575-91f4-c61cdf5570e5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b19f443-d7a4-4cc6-b942-70a954c00ff6">
+                    <propertyInstance
+                      Id="8cd8c3bb-6013-4d80-825f-bddd15c9b6da"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69576f8a-c1b8-4b9e-9205-8ae1b0008eaa">
+                    <propertyInstance
+                      Id="a29003d3-70be-4147-8d71-8859161c0541"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3627ab3-aa28-4b74-b128-5095876aec82">
+                    <propertyInstance
+                      Id="8ee83e3f-755e-4e1c-90e5-ad32735f2f1f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f846afc-c032-4c55-ab2a-99e396c4f519">
+                    <propertyInstance
+                      Id="2b6f219e-76ae-477e-b3c8-04c4d88e7bd9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="31402229-03f2-45f2-a939-a4b13c278b55"
+                LastKnownName="PlayBackStatus"
+                LastKnownLocation="Package_2035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9dd228b6-eb47-4f42-9808-ba6d39861012"
+            name="StatusChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5a469b5c-b94b-4d94-87a8-af5de8f69575"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DStatusChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23f3d4a6-5c49-4649-b773-5b7255dc0fc2"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f964df96-bb50-4ef6-acaa-48dea20b5df1">
+                    <propertyInstance
+                      Id="dd1d918e-bf10-4957-a6f2-389b61502724"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7880d22-5ae9-4bdc-b555-93d1681df82f">
+                    <propertyInstance
+                      Id="02dbb794-de89-4707-8b6e-58289b1febdf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52975cd4-9b88-4fc0-8542-75f84ee7ffd0">
+                    <propertyInstance
+                      Id="45018ae9-e3cf-4201-9c5e-958053411761"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe03b039-daf6-4bcd-9079-6afaecdb26a5">
+                    <propertyInstance
+                      Id="3c517637-0afd-4f13-b0db-5f926ae8932c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44733ed2-c61c-426c-a987-b97725deaf24">
+                    <propertyInstance
+                      Id="2f7cda73-37d8-4bd9-a34e-5fecbb9223ee"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b5f87485-ee41-4034-ae49-cbf6cbb3fb4d"
+                LastKnownName="EventHandler&lt;PlayPauseEventArgs‎&gt;"
+                LastKnownLocation="Package1_2035.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="82e9f5f5-fb65-4bd7-bf15-0e4fbd3f70b5"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2bcda467-db8f-4e5c-aa02-aa86a8d07b64"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c70d218c-53d4-41bd-b217-44d211e2ca82"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="392c2f15-466e-436f-b83f-06c054ca214c">
+                    <propertyInstance
+                      Id="3a678811-8361-42db-ac49-79edd9eae24b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6436f459-5ad8-4e3e-b033-dadddc7c64f9">
+                    <propertyInstance
+                      Id="9f65349d-9743-431e-8031-1fbd64cd15a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04781f4a-957b-462e-84c3-637b27c07b54">
+                    <propertyInstance
+                      Id="8c84e950-a149-475a-8cc5-7ea945e62849"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f9ec320-6bf0-4408-8583-012c40b6e71b">
+                    <propertyInstance
+                      Id="7f0d2b3d-6884-4759-8024-f9f67fa1f117"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fb736ca-615b-44ca-a6f3-e79f07eaa149">
+                    <propertyInstance
+                      Id="cbbc760f-799f-43a7-ad14-38bc71a33258"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1f5b489-e063-4297-ba71-61894a3ed45a">
+                    <propertyInstance
+                      Id="aac7374e-54d6-48f1-9ce6-ef5162328c60"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2971b5b5-da06-4ab4-addf-753615d96748"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0d4eef70-1073-4014-ad8b-4f564257de0f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2c02a4db-f553-4efb-8135-2370c25011cc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f093253-a8e7-4d6b-b946-ea618f5c7a14">
+                    <propertyInstance
+                      Id="571c112f-a260-46c4-9f1a-4b30ff2a9e0f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2797b135-b4e0-41b7-9775-3455334252f3">
+                    <propertyInstance
+                      Id="34bd4a84-2e2a-41c6-9d16-a44132a2220e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="023f5f0e-1a81-4991-8201-3bf79f47d3b5">
+                    <propertyInstance
+                      Id="33f80aa1-63a3-4c49-8d30-ea3e89bab4e3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c04a8d95-4e7e-42d8-aea2-9ab1fe8337af">
+                    <propertyInstance
+                      Id="1308f1e8-0175-4e66-b419-576cb1b114bd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2114984f-a1bc-4c38-8916-e93959e58e08">
+                    <propertyInstance
+                      Id="3935a977-d1cf-462d-9cf6-81ab9bd71efc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b622b5c-b561-42c2-b0a8-eaed44187f90">
+                    <propertyInstance
+                      Id="30a34dc0-b4f6-45a0-909e-efeca4d5f8ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7eefd9ba-bcd2-4dae-b99c-1f884697b526"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="09fbfd59-5374-4685-85b9-fba625e51a4f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a2f0fab-6cfb-4646-b295-3b4f4594905b"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1c5a431c-4a2d-4a20-8f0e-9cf9c956357f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d44ae804-9c6d-4037-a8e4-9de6adf045af"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9054cb20-9028-443d-94fd-6d44955525ef"
+            name="PlayPauseControl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8b8654b9-d914-46d3-9054-63e77ee55ae2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="315cf58f-a750-4048-9129-500030f87d39"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66a42743-9656-458b-9b9f-e902c9af61db">
+                    <propertyInstance
+                      Id="c144b010-bd8f-48c8-bffb-003e205e710b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31035e24-a6e2-4fda-8918-768f8dd3a35c">
+                    <propertyInstance
+                      Id="c9133e69-ab1d-44d6-9e1d-41a8e706b4db"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc0a8799-7183-46a0-b40e-2bfd8dc559c2">
+                    <propertyInstance
+                      Id="6f967fe9-96db-476e-8882-4e36019d9b3e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="609064fb-c30e-4189-b9c1-121a683bbd4e">
+                    <propertyInstance
+                      Id="88b1445a-30dc-416f-822f-cd76cc903b80"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98298436-39ad-464d-9521-4a611d7c5905">
+                    <propertyInstance
+                      Id="656e24bf-6a83-426b-a248-025b7fb0b1d5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0435d69c-64ca-452f-99cc-5ff6a56eabb3">
+                    <propertyInstance
+                      Id="92b0c1f4-3d59-4cd1-86cd-cbe5c950c75f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2c08c9d6-f5c3-4f20-b78f-9eb487bd7016"
+            name="onClicked"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3042832f-c074-464f-b643-0766539758bc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DonClicked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DMouseButtonEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="51b03e2b-946a-475c-9f19-7d46fc3b9f21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35edbf79-88af-4a3d-9491-5b2dc85dd096">
+                    <propertyInstance
+                      Id="708a427a-1761-43a1-aca1-b286bb8fb226"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67d80004-4b7b-4761-a9db-a9593887dafd">
+                    <propertyInstance
+                      Id="a898b724-5129-4df9-8ac7-3d46f2a0ab90"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1b2f88d-cf4b-4824-b252-c00316777df8">
+                    <propertyInstance
+                      Id="c91ffcc4-8d85-481d-bf2b-2ab044e9785e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85577638-a95d-4bb2-95b3-a7ab83bbb0e6">
+                    <propertyInstance
+                      Id="136b7d61-99a4-4354-8e2f-3987eff37bde"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f68fee6-d8c6-49dc-9883-38dc1945efb4">
+                    <propertyInstance
+                      Id="8ee2c667-f7b3-4051-b501-0df36af749df"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0094eb71-9d67-4248-85c5-51fef9970a8f">
+                    <propertyInstance
+                      Id="ebae1dce-b632-4cdd-b973-83336dca41ea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0cc9be13-f86f-4282-84be-177b6918be60"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="43f7c4f2-fbfa-47db-ae29-50c61928bc4d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DonClicked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DMouseButtonEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d44ae804-9c6d-4037-a8e4-9de6adf045af"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94028e41-988e-4e13-8441-ccd0536b52ce"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83323fa5-1bc6-4728-bcda-26f89569ebe6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DonClicked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DMouseButtonEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5043f228-1ac4-427b-96f6-d533107a6391"
+                      LastKnownName="MouseButtonEventArgs"
+                      LastKnownLocation="Package3_2035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1af7d056-a40d-4a08-bf43-a05d839eca23"
+            name="updateHandler"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a5a16c33-8af8-49e5-b404-b8958a064d60"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DupdateHandler OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42fa6736-286c-4d53-97d3-8d16f9b93b57"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2449a3d4-bf60-4245-b7d2-733b2fe08150">
+                    <propertyInstance
+                      Id="87bda157-02e2-4241-8c8e-f635df364410"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3e705e4-ce4f-4f3c-b656-93693212508c">
+                    <propertyInstance
+                      Id="f0965edf-0e60-4b75-a36d-89b4eeb2654d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ea478e5-f11f-4c86-96cc-bb7f4fb177df">
+                    <propertyInstance
+                      Id="7487950d-5bfc-47bd-8418-7ead02c65ef7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95df982d-3b08-413e-be8c-5d27e670c103">
+                    <propertyInstance
+                      Id="3ecc9f37-68fc-4c3f-9ef0-40d300c0e769"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dabd4e17-6917-4a9a-b1f8-d0163a8bf366">
+                    <propertyInstance
+                      Id="c67b5a15-bc5f-407c-a9ab-eaaf7e94ea02"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee9e6a42-667c-4011-a41e-30ed787cf310">
+                    <propertyInstance
+                      Id="b9c5e5d2-0a91-4eea-a287-42929ce402e7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8dadaa9e-748f-4c6b-8061-0fcd7f04d0d5"
+                  name="status"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7605c0c8-673d-4ed4-ac08-fe339fcc16e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DupdateHandler OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl))]) ParameterIdentifier%3Dstatus"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="31402229-03f2-45f2-a939-a4b13c278b55"
+                      LastKnownName="PlayBackStatus"
+                      LastKnownLocation="Package_2035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="93b443a8-5bfa-4442-be57-2daf7a0c2707"
+            name="setIcon"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="39eb14f2-29c1-43b6-b078-7d9f7bd623b6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DsetIcon OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="04313774-2ddd-40d8-9f18-361d3426234b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a818eac-3b20-4f45-84e2-bce86c142a69">
+                    <propertyInstance
+                      Id="6501b98d-c193-4ec4-b130-3534e76f7e9c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="872b4cdd-0132-4c52-8cc7-faf719d2b3fd">
+                    <propertyInstance
+                      Id="4879f5c8-4137-486f-ada4-88a0208e5df9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33259816-092a-47a8-bc1c-3e818ca1a112">
+                    <propertyInstance
+                      Id="71c40fed-b6bd-4254-8e43-24d446f443c3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="443a6c3e-f426-44f9-b440-2ef094409377">
+                    <propertyInstance
+                      Id="13a49f91-03c8-4258-89e6-854a5d7c7704"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c22916ed-36f6-4a9b-a30d-bcefcfc968f4">
+                    <propertyInstance
+                      Id="0adb4607-b3c9-489c-bd1a-a170c05d3c67"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14e6a6b6-b310-4664-8bcf-9ca99d9f6a7f">
+                    <propertyInstance
+                      Id="49123f4b-15d1-482c-b18b-874716d7d9cf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8948cdf1-54d4-49cd-aabf-cad0e41fbf3b"
+                  name="status"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="14eee8dc-e4d5-43bd-95a3-43eaec3a33a2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseControl Member%3D(Name%3DsetIcon OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl))]) ParameterIdentifier%3Dstatus"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="31402229-03f2-45f2-a939-a4b13c278b55"
+                      LastKnownName="PlayBackStatus"
+                      LastKnownLocation="Package_2035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="650060ef-390e-44fb-9527-114eb4997aa4"
+        name="PlayPauseEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e1081130-f782-42cf-8d5e-846f933ce6ec"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f9b4eb9c-8f18-4a39-9c95-d1dfe477e7b9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17b8cd90-3df8-41a5-9859-2e9dfcc92828">
+                <propertyInstance
+                  Id="903ec66a-15f9-4cfb-a227-aeae6c74e6af"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="25bf5b50-707a-4eb3-88ec-1d0d484d6a9e">
+                <propertyInstance
+                  Id="76624593-f3de-42d5-96d4-b6ee46bf6f7f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7921ee2a-32c4-4341-b7b0-ac24d5738e45">
+                <propertyInstance
+                  Id="cfb04d60-6d51-441b-a8f3-47f862d95b03"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4df5228d-cdff-4172-92d6-ad53848a9a68">
+                <propertyInstance
+                  Id="1317611d-fe0c-43af-a57f-6327835684c1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12cd4533-da73-42aa-8e9f-2e4b57259800">
+                <propertyInstance
+                  Id="01be3096-ca00-4486-b51e-8fc59685a3b5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="2e390203-b2d6-42b9-b474-ef24108abe19"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1e6696cc-3724-45c9-83c1-898d04517e26"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package1_2035.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5b9fa2e4-ebc4-4b3d-9547-f6786fd743a5"
+            name="status"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1f7f98fa-7484-4210-8a23-a0d3e02265d7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseEventArgs Member%3Dstatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e4f4b6c-589d-4a17-937e-0ffbb6434483"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bb47351-0ab5-4d51-8569-825907ac3622">
+                    <propertyInstance
+                      Id="c9fb27d0-6f46-46b7-875a-3e4c4801fe64"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc80d84b-7b6c-4ec0-b3af-b37b7d947ee5">
+                    <propertyInstance
+                      Id="050a5516-895c-4dab-b528-40cf1d20ac5d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a559bed3-6873-427c-b4aa-6a82e68c17c5">
+                    <propertyInstance
+                      Id="8fea6446-eb06-488b-8d30-3c0ba5f1d95b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90670c29-c381-460c-9fff-e16343d1cf15">
+                    <propertyInstance
+                      Id="3f6e5746-848c-44b2-8be5-9e05369b3bb4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3c094ba-a2e8-4bb6-a64c-1d0556ac6f6f">
+                    <propertyInstance
+                      Id="dff8e90b-d94c-42dd-9ce0-c3a6087926f4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="31402229-03f2-45f2-a939-a4b13c278b55"
+                LastKnownName="PlayBackStatus"
+                LastKnownLocation="Package_2035.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f3f3b031-3999-4ca3-8ae8-9021c8f81e12"
+            name="PlayPauseEventArgs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a585ba2f-c16a-4c6f-b87e-19f6a1cab00b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a77db6e-242a-485b-ba7e-ab2eee741c5e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fca46c5b-042f-488a-8fba-95d6b71ca638">
+                    <propertyInstance
+                      Id="a2e05e02-5cab-4a47-99c9-f4b0c86bcda8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5848f690-84a9-464c-9c39-22f1ce0d06d6">
+                    <propertyInstance
+                      Id="833cd545-38a2-4504-874e-77051a36356e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64eb6e81-6b33-4221-8f58-1b90a8dd7c1d">
+                    <propertyInstance
+                      Id="ef6a105a-e191-41ae-ba24-3f635cf1495d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c838a3b-ad67-40d5-82e3-ed1ca5504f50">
+                    <propertyInstance
+                      Id="da8a20ab-710d-4fa4-bc83-44cfeae0e417"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d90a2a6-9f63-400f-8114-6bd14eac0c0b">
+                    <propertyInstance
+                      Id="10cb02a0-d2dd-471d-a7fe-d50e4dba5363"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a8c485e-6a31-41f3-8f9a-a1225038ac5f">
+                    <propertyInstance
+                      Id="65893b78-3456-4a9f-8fa6-7ec840fe156b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="66113a29-462a-465e-94cd-699041df1772"
+                  name="status"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="72b76965-01ac-437a-b389-72db6b4991da"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3DPlayPauseEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLeon%2FDesktop%2FBCIT%2F3951 - TechPro%2FWaveIO-Main%2FUserControlLibrary%2Fbin%2FDebug%2FUserControlLibrary.dll&quot; Namespace%3DPlayPause Type%3D(Name%3DPlayBackStatus ParentType%3DPlayPauseControl))]) ParameterIdentifier%3Dstatus"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="31402229-03f2-45f2-a939-a4b13c278b55"
+                      LastKnownName="PlayBackStatus"
+                      LastKnownLocation="Package_2035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

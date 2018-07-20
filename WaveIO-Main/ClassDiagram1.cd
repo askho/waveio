@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WaveIO_Main.AggregateSampleProvider" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAQIAAAABAIIBIAIAAAgAAAAACBEQgAQAAAAAAA=</HashCode>
+      <FileName>AggregateSampleProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WaveIO_Main.MaxSampleEventArgs">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>AggregateSampleProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveIO_Main.FftEventArgs">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateSampleProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveIO_Main.AudioEngine" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAIACAAAgAgAAAAAABACCAgAAEAoCIAgABAABA=</HashCode>
+      <FileName>AudioEngine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WaveIO_Main.MainWindow">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAyAAQIAAAAAAABAMCAAAAkAgEKAgAAAKBAIAIAAIAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
